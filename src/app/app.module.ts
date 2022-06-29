@@ -15,6 +15,7 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { TopLayoutComponent } from './components/top-layout/top-layout.component';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
+import { FoodItemComponent } from './components/food-item/food-item.component';
 
 
 
@@ -23,7 +24,8 @@ registerLocaleData(en);
 @NgModule({
   declarations: [
     AppComponent,
-    TopLayoutComponent
+    TopLayoutComponent,
+    FoodItemComponent,
   ],
   imports: [
     BrowserModule,
