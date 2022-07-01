@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "OREO Gluten Free chocolate Sandwich Cookies",
+        "manufacturer": "OREO",
+        "description": "OREO fans will celebrate this delightful, certified gluten free treat. These gluten free chocolate wafer cookies are made with real cocoa and a blend of gluten free flour!"
+    },
+    {
+        "id": 2,
+        "name": "Gluten Free Chocolate Chip Cookies",
+        "manufacturer": "Tate's Bake Shop",
+        "description": "Our gluten free chocolate chip cookies are perfect for the cookie lovers in your life with diet restrictions."
+    },
+    {
+        "id": 3,
+        "name": "Vegan & Gluten-Free Chocolate Chip Cookie",
+        "manufacturer": "Insomnia Cookies",
+        "description": "Our vegan, gluten-free cookie is made without animal products or by-products and without any ingredients that contain gluten."
+    }
+]
