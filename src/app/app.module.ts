@@ -17,6 +17,8 @@ import { TopLayoutComponent } from './components/top-layout/top-layout.component
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 import { FoodItemComponent } from './components/food-item/food-item.component';
 import { LearnmoreButtonComponent } from './components/learnmore-button/learnmore-button.component';
+import { FilterPipe } from './filter.pipe';
+import { SearchComponent } from './components/search/search.component';
 
 
 
@@ -28,6 +30,8 @@ registerLocaleData(en);
     TopLayoutComponent,
     FoodItemComponent,
     LearnmoreButtonComponent,
+    FilterPipe,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

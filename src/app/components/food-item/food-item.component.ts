@@ -24,12 +24,7 @@ export class FoodItemComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.getFood();
   }
 
-  getFood(): void {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
-    
-  }
 
 }
