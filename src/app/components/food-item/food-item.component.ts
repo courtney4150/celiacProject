@@ -7,6 +7,7 @@ interface Food {
   name: string;
   manufacturer: string;
   description: string;
+  learnmore: string;
 }
 
 @Component({
