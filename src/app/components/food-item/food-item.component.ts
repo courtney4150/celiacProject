@@ -1,7 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { AppComponent } from '../app.component';
-
 import foodsJson from 'src/app/food-list.json';
 
 interface Food {
