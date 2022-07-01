@@ -16,6 +16,7 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { TopLayoutComponent } from './components/top-layout/top-layout.component';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 import { FoodItemComponent } from './food-item/food-item.component';
+import { LearnmoreButtonComponent } from './components/learnmore-button/learnmore-button.component';
 
 
 
@@ -26,6 +27,7 @@ registerLocaleData(en);
     AppComponent,
     TopLayoutComponent,
     FoodItemComponent,
+    LearnmoreButtonComponent,
   ],
   imports: [
     BrowserModule,
