@@ -24,8 +24,12 @@
 
       .inner-content {
         background: #fff;
-        padding: 24px;
+        padding: 50px;
         min-height: 280px;
+      }
+
+      .search-heading {
+        text-align: center;
       }
 
       img {
