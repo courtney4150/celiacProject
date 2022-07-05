@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { NzButtonSize } from 'ng-zorro-antd/button';
 
@@ -8,5 +8,7 @@ import { NzButtonSize } from 'ng-zorro-antd/button';
   styleUrls: ['./learnmore-button.component.css']
 })
 export class LearnmoreButtonComponent {
+  @Input() link = '';
+
   size: NzButtonSize = 'large';
 }

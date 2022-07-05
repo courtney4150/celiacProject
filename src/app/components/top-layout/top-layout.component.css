@@ -1,41 +1,40 @@
 
-      .logo {
-        width: 120px;
-        height: 31px;
-        margin: 16px 24px 16px 24px;
-        float: left;
-      }
+.logo {
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 24px;
+  float: left;
+}
 
-      [nz-menu] {
-        line-height: 64px;
-      }
+[nz-menu] {
+  line-height: 64px;
+}
 
-      nz-breadcrumb {
-        margin: 16px 0;
-      }
+nz-breadcrumb {
+  margin: 16px 0;
+}
 
-      nz-content {
-        padding: 0 50px;
-      }
+nz-content {
+  padding: 0 50px;
+}
 
-      nz-footer {
-        text-align: center;
-      }
+nz-footer {
+  text-align: center;
+}
 
-      .inner-content {
-        background: #fff;
-        padding: 50px;
-        min-height: 280px;
-      }
+.inner-content {
+  background: #fff;
+  padding: 50px;
+  min-height: 280px;
+}
 
-      .search-heading {
-        text-align: center;
-      }
+.search-heading {
+  text-align: center;
+}
 
-      img {
-        max-width: 120px;
-        display: flex;
-        align-items: center;
-        border-radius: 6px;
-      }
-    
+img {
+  max-width: 120px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}

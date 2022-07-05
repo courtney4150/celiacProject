@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import foodsJson from 'src/app/food-list.json';
 import { FoodItemComponent } from '../food-item/food-item.component';
 
@@ -9,13 +9,24 @@ import { FoodItemComponent } from '../food-item/food-item.component';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
-  searchText = '';
-  searchFoods = FoodItemComponent.name;
-
-
   constructor() { }
 
-  ngOnInit(): void {
+  @Output() public search = new EventEmitter<string>();
+
+  public searchText = '';
+  public searchFoods = FoodItemComponent.name;
+
+
+  
+
+  public ngOnInit(): void {
   }
+
+  public onSearch(): void {
+
+    this.search.emit(this.searchText);
+  }
+
+  
 
 }

@@ -19,9 +19,17 @@
           <div class="search-heading">
             <h1>Celiac Project</h1>
             <h2>Search for common products and restaurant items to quickly find gluten allergen info.</h2>
-            <app-search></app-search>
+            <app-search (search)="onSearch($event)"></app-search>
           </div>
-          <app-food-item></app-food-item>
+          <div class="display-foods">
+            <div id="food-card" *ngFor="let food of foods">
+              <app-food-item  [foodName]="food.name" 
+                              [foodManufacturer]="food.manufacturer" 
+                              [foodDescription]="food.description" 
+                              [foodLink]="food.learnmore">
+              </app-food-item>
+            </div>
+          </div>
         </div>
       </nz-content>
       <nz-footer>©2022 Celiac Project By <a href="https://github.com/courtney4150">Courtney S.</a></nz-footer>

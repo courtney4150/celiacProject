@@ -1,6 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import foodsJson from 'src/app/food-list.json';
 
 interface Food {
   id: number;
@@ -16,8 +15,11 @@ interface Food {
   styleUrls: ['./food-item.component.scss']
 })
 export class FoodItemComponent implements OnInit {
-
-  foods: Food[] = foodsJson;
+  @Input() foodName = '';
+  @Input() foodManufacturer = '';
+  @Input() foodDescription = '';
+  @Input() foodLink = '';
+  childFoodLink = this.foodLink;
 
   constructor(
     private route: ActivatedRoute
