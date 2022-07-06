@@ -1,11 +1,11 @@
 <div class="content" role="main">
     <div class="card">
       <div class="form-group">
-        <label for="search-text">Search Here: </label>
+        <label for="search-text"></label>
         <input type="email" class="form-control" id="search-text" aria-describedby="search-text" 
           [(ngModel)]="searchText" placeholder="Enter text to search" 
           autofocus>
-        <button (click)="onSearch()">Search</button>
+        <button class="search-button" (click)="onSearch()">Search</button>
       </div>
       <ul class="list-group list-group-flush">
         <!-- results of ngFor is passed to appFilter with argument searchText -->
