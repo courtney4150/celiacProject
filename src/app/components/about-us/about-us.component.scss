@@ -1,0 +1,49 @@
+
+.logo {
+    width: 120px;
+    height: 31px;
+    margin: 16px 24px 16px 24px;
+    float: left;
+  }
+  
+  [nz-menu] {
+    line-height: 64px;
+  }
+  
+  nz-breadcrumb {
+    margin: 16px 0;
+  }
+  
+  nz-footer {
+    text-align: center;
+  }
+  
+  .inner-content {
+    background: #fff;
+    padding: 50px;
+    min-height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  .search-heading {
+    text-align: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .display-foods {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  img {
+    max-width: 120px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+  }
+  

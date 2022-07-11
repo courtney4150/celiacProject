@@ -16,9 +16,6 @@ export class SearchComponent implements OnInit {
   public searchText = '';
   public searchFoods = FoodItemComponent.name;
 
-
-  
-
   public ngOnInit(): void {
   }
 
@@ -26,7 +23,4 @@ export class SearchComponent implements OnInit {
 
     this.search.emit(this.searchText);
   }
-
-  
-
 }

@@ -19,6 +19,8 @@ import { FoodItemComponent } from './components/food-item/food-item.component';
 import { LearnmoreButtonComponent } from './components/learnmore-button/learnmore-button.component';
 import { FilterPipe } from './filter.pipe';
 import { SearchComponent } from './components/search/search.component';
+import { RouterModule } from '@angular/router';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 
@@ -31,10 +33,15 @@ registerLocaleData(en);
     FoodItemComponent,
     LearnmoreButtonComponent,
     FilterPipe,
-    SearchComponent
+    SearchComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot([
+      {path: 'home', component: TopLayoutComponent},
+      {path: 'about-us', component: AboutUsComponent}
+      ]),
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
