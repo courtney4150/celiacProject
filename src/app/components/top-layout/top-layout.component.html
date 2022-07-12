@@ -22,12 +22,19 @@
           <nz-breadcrumb-item>App</nz-breadcrumb-item>
         </nz-breadcrumb>-->
         <div class="inner-content">
-          <div class="search-heading">
-            <h1>Celiac Project</h1>
-            <h2>Search for common products and restaurant items to quickly find gluten allergen info.</h2>
-            <app-search (search)="onSearch($event)"></app-search>
+          <div class="background-image">
+            <div class="search-heading-text">
+              <h1>Celiac Project</h1>
+              <h2>Search for common products and restaurant items to quickly find gluten allergen info.</h2>
+              
+            </div>
           </div>
-          <div class="display-foods">
+          
+          <div class="search-display-foods">
+            <div class="search">
+              <app-search (search)="onSearch($event)"></app-search>
+            </div>
+            
             <div id="food-card" *ngFor="let food of foods">
               <app-food-item  [foodName]="food.name" 
                               [foodManufacturer]="food.manufacturer" 
@@ -38,6 +45,6 @@
           </div>
         </div>
       </nz-content>
-      <nz-footer>©2022 Celiac Project By <a href="https://github.com/courtney4150">Courtney S.</a></nz-footer>
+      <nz-footer>©2022 Celiac Project By <a class="footer" href="https://github.com/courtney4150">Courtney S.</a></nz-footer>
     </nz-layout>
   
