@@ -24,8 +24,8 @@
         <div class="inner-content">
           <div class="background-image">
             <div class="search-heading-text">
-              <h1>Celiac Project</h1>
-              <h2>Search for common products and restaurant items to quickly find gluten allergen info.</h2>
+              <h1><b>Celiac Project</b></h1>
+              <h2>Search for common food products to quickly find gluten allergen information.</h2>
               
             </div>
           </div>
@@ -35,7 +35,7 @@
               <app-search (search)="onSearch($event)"></app-search>
             </div>
             
-            <div id="food-card" *ngFor="let food of foods">
+            <div id="food-card" *ngFor="let food of foodsList">
               <app-food-item  [foodName]="food.name" 
                               [foodManufacturer]="food.manufacturer" 
                               [foodDescription]="food.description" 
