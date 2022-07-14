@@ -4,20 +4,31 @@
         "name": "OREO Gluten Free Chocolate Sandwich Cookies",
         "manufacturer": "OREO",
         "description": "OREO fans will celebrate this delightful, certified gluten free treat. These gluten free chocolate wafer cookies are made with real cocoa and a blend of gluten free flour!",
-        "learnmore": "https://www.oreo.com/oreo-cookies/gluten-free"
+        "learnmore": "https://www.oreo.com/oreo-cookies/gluten-free",
+        "cert": "GFCO"
     },
     {
         "id": 2,
         "name": "Gluten Free Chocolate Chip Cookies",
         "manufacturer": "Tate's Bake Shop",
         "description": "Our gluten free chocolate chip cookies are perfect for the cookie lovers in your life with diet restrictions.",
-        "learnmore": "https://www.tatesbakeshop.com/6-pk-gluten-free-chocolate-chip-cookies.html"
+        "learnmore": "https://www.tatesbakeshop.com/6-pk-gluten-free-chocolate-chip-cookies.html",
+        "cert": ""
     },
     {
         "id": 3,
         "name": "Vegan & Gluten-Free Chocolate Chip Cookie",
         "manufacturer": "Insomnia Cookies",
         "description": "Our vegan, gluten-free cookie is made without animal products or by-products and without any ingredients that contain gluten.",
-        "learnmore": "https://app.insomniacookies.com/vegan-gluten-free-chocolate-chip-cookie"
+        "learnmore": "https://app.insomniacookies.com/vegan-gluten-free-chocolate-chip-cookie",
+        "cert": ""
+    },
+    {
+        "id": 4,
+        "name": "Toffee-tastic Girl Scout Cookies",
+        "manufacturer": "Ferrara Candy Company",
+        "description": "Rich, buttery cookies with sweet, crunchy toffee bits. Gluten-free.",
+        "learnmore": "https://www.littlebrowniebakers.com/products/toffee-tastic/",
+        "cert": "NSF"
     }
 ]

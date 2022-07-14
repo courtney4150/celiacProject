@@ -1,5 +1,6 @@
 <div id="food-card">
     <h1 id="food-name"><b>{{foodName}}</b> by {{foodManufacturer}}</h1>
+    <img *ngIf="foodCert" src="/assets/{{foodCert}}.png">
     <p>{{foodDescription}}</p>
     <app-learnmore-button [link]="this.foodLink"></app-learnmore-button>
 </div>

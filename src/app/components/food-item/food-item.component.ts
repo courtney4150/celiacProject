@@ -7,6 +7,7 @@ interface Food {
   manufacturer: string;
   description: string;
   learnmore: string;
+  cert: string;
 }
 
 @Component({
@@ -19,6 +20,7 @@ export class FoodItemComponent implements OnInit {
   @Input() foodManufacturer = '';
   @Input() foodDescription = '';
   @Input() foodLink = '';
+  @Input() foodCert = '';
   childFoodLink = this.foodLink;
 
   constructor(

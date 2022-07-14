@@ -8,6 +8,7 @@ interface Food {
   manufacturer: string;
   description: string;
   learnmore: string;
+  cert: string;
 }
 
 @Component({

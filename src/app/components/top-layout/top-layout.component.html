@@ -16,11 +16,6 @@
         </ul>
       </nz-header>
       <nz-content>
-        <!--<nz-breadcrumb>
-          <nz-breadcrumb-item>Home</nz-breadcrumb-item>
-          <nz-breadcrumb-item>List</nz-breadcrumb-item>
-          <nz-breadcrumb-item>App</nz-breadcrumb-item>
-        </nz-breadcrumb>-->
         <div class="inner-content">
           <div class="background-image">
             <div class="search-heading-text">
@@ -39,7 +34,8 @@
               <app-food-item  [foodName]="food.name" 
                               [foodManufacturer]="food.manufacturer" 
                               [foodDescription]="food.description" 
-                              [foodLink]="food.learnmore">
+                              [foodLink]="food.learnmore"
+                              [foodCert]="food.cert">
               </app-food-item>
             </div>
           </div>
