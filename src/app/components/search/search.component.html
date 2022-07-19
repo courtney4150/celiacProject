@@ -5,13 +5,8 @@
         <input type="email" class="form-control" id="search-text" aria-describedby="search-text" 
           [(ngModel)]="searchText" placeholder="Enter text to search" 
           autofocus>
-        <button class="search-button" (click)="onSearch()">Search</button>
+        <button class="search-button" (click)="onSearch()" (keyup.enter)="onSearch()">Search</button>
       </div>
-      <ul class="list-group list-group-flush">
-        <!-- results of ngFor is passed to appFilter with argument searchText -->
-        <!--<li class="list-group-item" *ngFor="let f of searchFoods | appFilter: searchText">
-          {{f}}
-        </li>-->
-      </ul>
+      <button class="clear-button" (click)="clear()">Clear Search</button>
     </div>
   </div>

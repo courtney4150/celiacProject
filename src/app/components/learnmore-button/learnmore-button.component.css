@@ -1,7 +1,15 @@
 
 [nz-button] {
-  margin-right: 8px;
-  margin-bottom: 12px;
+  margin-top: 12px;
+  border-radius: 6px;
+  background-color: #516BEB;
+  color: white;
+  font-size: 20px;
+}
+
+[nz-button]:hover {
+  background-color: white;
+  color: #516BEB;
 }
 
 nz-button-group [nz-button] {

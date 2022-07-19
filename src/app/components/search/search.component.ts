@@ -23,4 +23,9 @@ export class SearchComponent implements OnInit {
 
     this.search.emit(this.searchText);
   }
+
+  public clear(): void {
+    this.searchText = '';
+    this.onSearch();
+  }
 }
