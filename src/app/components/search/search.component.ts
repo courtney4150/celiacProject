@@ -20,7 +20,6 @@ export class SearchComponent implements OnInit {
   }
 
   public onSearch(): void {
-
     this.search.emit(this.searchText);
   }
 

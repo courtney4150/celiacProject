@@ -17,26 +17,25 @@ interface Food {
   styleUrls: ['./top-layout.component.css']
 })
 export class TopLayoutComponent {
-  //foods: Food[] = foodsJson;
-  searchText = '';
-  foodsList: Food[] = [];
-  allFoodsList: Food[] = [];
+  public searchText = '';
+  public foodsList: Food[] = [];
+  private _allFoodsList: Food[] = [];
 
   constructor(private http: HttpClient) {}
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.http
       .get<Food[]>('/assets/food-list.json')
       .subscribe((data: Food[]) => {
         this.foodsList = data;
-        this.allFoodsList = this.foodsList;
+        this._allFoodsList = this.foodsList;
       })
   }
 
-  onSearch(searchText: string): void {
-    console.log(searchText);
-    this.foodsList = this.allFoodsList.filter((val) => 
-    val.name.toLowerCase().includes(searchText)
+  public onSearch(searchText: string): void {
+    this.foodsList = this._allFoodsList.filter((food) => 
+    food.name.toLowerCase().includes(searchText) ||
+    food.manufacturer.toLowerCase().includes(searchText)
     );
   }
 }

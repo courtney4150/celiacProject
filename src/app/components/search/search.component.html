@@ -1,12 +1,14 @@
 <div class="content" role="main">
     <div class="card">
-      <div class="form-group">
-        <label for="search-text"></label>
-        <input type="email" class="form-control" id="search-text" aria-describedby="search-text" 
-          [(ngModel)]="searchText" placeholder="Enter text to search" 
-          autofocus>
-        <button class="search-button" (click)="onSearch()" (keyup.enter)="onSearch()">Search</button>
-      </div>
-      <button class="clear-button" (click)="clear()">Clear Search</button>
+      <form (ngSubmit)="onSearch()">
+        <div class="form-group">
+          <label for="search-text"></label>
+          <input name="search" class="form-control" id="search-text" aria-describedby="search-text" 
+            [(ngModel)]="searchText" placeholder="Enter text to search" 
+            autofocus>
+          <button class="search-button" (click)="onSearch()">Search</button>
+        </div>
+        <button class="clear-button" (click)="clear()">Clear Search</button>
+      </form>
     </div>
   </div>
