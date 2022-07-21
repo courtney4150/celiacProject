@@ -3,12 +3,16 @@
       <form (ngSubmit)="onSearch()">
         <div class="form-group">
           <label for="search-text"></label>
-          <input name="search" class="form-control" id="search-text" aria-describedby="search-text" 
-            [(ngModel)]="searchText" placeholder="Enter text to search" 
-            autofocus>
-          <button class="search-button" (click)="onSearch()">Search</button>
+          <nz-input-group [nzSuffix]="suffixIconSearch">
+            <input type="text" name="search" class="form-control" id="search-text" aria-describedby="search-text" 
+            [(ngModel)]="searchText" nz-input placeholder="Enter text to search" 
+            autofocus />
+          </nz-input-group>
+          <ng-template #suffixIconSearch>
+            <a (click)="onSearch()"><i nz-icon nzType="search"></i></a>
+          </ng-template>
         </div>
-        <button class="clear-button" (click)="clear()">Clear Search</button>
+        <a id="clear" (click)="clear()">Clear Search</a>
       </form>
     </div>
   </div>

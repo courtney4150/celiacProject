@@ -6,27 +6,15 @@
     border-radius: 6px;
 }
 
-.search-button {
-    margin-left: 10px;
-    border-radius: 6px;
-    background-color: #516BEB;
-    color: white;
-}
-
-.search-button:hover {
-    background-color: white;
+#clear {
+    text-decoration: underline;
     color: #516BEB;
+    font-size: 16px;
+
 }
 
-.clear-button {
-    margin-left: 10px;
-    border-radius: 6px;
-    background-color: #516BEB;
-    color: white;
-    margin-top: 30px;
-}
-
-.clear-button:hover {
-    background-color: white;
-    color: #516BEB;
+.form-group {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }

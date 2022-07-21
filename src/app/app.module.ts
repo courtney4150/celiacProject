@@ -21,7 +21,8 @@ import { FilterPipe } from './filter.pipe';
 import { SearchComponent } from './components/search/search.component';
 import { RouterModule } from '@angular/router';
 import { AboutUsComponent } from './components/about-us/about-us.component';
-
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzGridModule } from 'ng-zorro-antd/grid';
 
 
 registerLocaleData(en);
@@ -49,7 +50,9 @@ registerLocaleData(en);
     IconsProviderModule,
     NzLayoutModule,
     NzMenuModule,
-    NzBreadCrumbModule
+    NzBreadCrumbModule,
+    NzInputModule,
+    NzGridModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

@@ -1,5 +1,4 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-//import foodsJson from 'src/app/food-list.json';
 import { FoodItemComponent } from '../food-item/food-item.component';
 
 
