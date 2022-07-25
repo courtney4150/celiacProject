@@ -6,6 +6,13 @@
   float: left;
 }
 
+.logo img {
+  max-width: 120px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
 [nz-menu] {
   line-height: 64px;
 }
@@ -23,40 +30,59 @@ nz-footer {
   min-height: 280px;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
-.background-image {
-  background-image: url("/assets/pink-background.jpg");
-  background-color: #EDD2F3;
-  background-size: cover;
+.header {
+  max-width: 50%;
+  min-height: 275px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    max-width: 70%;
+  }
+}
+
+.shopping-cart-img {
+  background-image: url("/assets/shopping-cart.eps");
+  min-height: 200px;
+  max-width: 300px;
+  object-fit: cover;
+  float: right;
 }
 
 .search-heading-text {
-  padding: 50px 15%;
   text-align: center;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 50%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  float: left;
 }
 
-.search-display-foods {
-  padding: 50px;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+.search-heading-text h1 {
+  letter-spacing: -1.64px;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.search-heading-text h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
 }
 
 .search {
   text-align: center;
   font-size: 20px;
-}
-
-img {
-  max-width: 120px;
-  display: flex;
-  align-items: center;
-  border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
 }
 
 .footer {
@@ -77,5 +103,4 @@ img {
 
 .ant-col-6 {
   min-width: 100%;
-  
 }

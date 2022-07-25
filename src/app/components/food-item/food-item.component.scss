@@ -6,20 +6,26 @@
     margin: 20px;
 }
 
-#food-card-head {
+#food-card-bottom {
     display: flex;
     flex-direction: row;
-}
-
-#food-name {
-    width: 80%;
+    column-gap: 20px;
+    align-items: center;
 }
 
 img {
     max-width: 100px;
     margin: auto;
+    padding-right: 10px;
 }
 
 p {
     font-size: 16px;
+}
+
+#food-cert-button {
+    background-color: #84DFFF;
+    border: 0px;
+    display: flex;
+    
 }

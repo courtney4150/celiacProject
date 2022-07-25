@@ -17,31 +17,18 @@
       </nz-header>
       <nz-content>
         <div class="inner-content">
-          <div class="background-image">
+          <div class="header">
             <div class="search-heading-text">
-              <h1><b>Celiac Project</b></h1>
+              <h1>Celiac Project</h1>
               <h2>Search for common food products to quickly find gluten allergen information.</h2>
-              
             </div>
+            <img src='/assets/shopping-cart.jpg'class="shopping-cart-img"/>
           </div>
-          
-          <div class="search-display-foods">
-            <div class="search">
-              <app-search (search)="onSearch($event)"></app-search>
-            </div>
-            
-            <div id="food-card" *ngFor="let food of foodsList">
-              <app-food-item  [foodName]="food.name" 
-                              [foodManufacturer]="food.manufacturer" 
-                              [foodDescription]="food.description" 
-                              [foodLink]="food.learnmore"
-                              [foodCert]="food.cert">
-              </app-food-item>
-            </div>
-            
-            
 
+          <div class="search">
+            <app-search (search)="onSearch($event)"></app-search>
           </div>
+
           <div nz-row id="food-card-test-row" nzJustify="center" [nzGutter]="[16, 24]">
             <div id="food-card-test" *ngFor="let food of foodsList">
               <div nz-col class="gutter-row" [nzSpan]="6">

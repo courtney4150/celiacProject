@@ -23,6 +23,7 @@ import { RouterModule } from '@angular/router';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzGridModule } from 'ng-zorro-antd/grid';
+import { NzPopoverModule } from 'ng-zorro-antd/popover';
 
 
 registerLocaleData(en);
@@ -52,7 +53,8 @@ registerLocaleData(en);
     NzMenuModule,
     NzBreadCrumbModule,
     NzInputModule,
-    NzGridModule
+    NzGridModule,
+    NzPopoverModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

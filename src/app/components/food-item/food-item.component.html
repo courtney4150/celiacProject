@@ -1,9 +1,16 @@
 <div id="food-card">
-    <div id="food-card-head">
-        <h1 id="food-name"><b>{{foodName}}</b> by {{foodManufacturer}}</h1>
-        <img id="food-cert" *ngIf="foodCert" src="/assets/{{foodCert}}.png">
-    </div>
-    
+    <h1 id="food-name"><b>{{foodName}}</b> by {{foodManufacturer}}</h1>
     <p>{{foodDescription}}</p>
-    <app-learnmore-button [link]="foodLink"></app-learnmore-button>
+    <div id="food-card-bottom">
+        <app-learnmore-button [link]="foodLink"></app-learnmore-button>
+        <div *ngIf="foodCert">
+            <button id="food-cert-button" 
+                    nz-button nz-popover 
+                    nzType="primary" 
+                    nzPopoverPlacement="topRight"
+                    nzPopoverContent="This product is Certified Gluten Free by {{foodCert}}.">
+                <img id="food-cert" src="/assets/{{foodCert}}.png">
+            </button>
+        </div>
+    </div>
 </div>

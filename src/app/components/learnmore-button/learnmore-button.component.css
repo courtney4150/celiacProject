@@ -1,21 +1,26 @@
 
 [nz-button] {
-  margin-top: 12px;
-  border-radius: 6px;
+  border-radius: 3px;
+  border: 0px;
   background-color: #516BEB;
   color: white;
-  font-size: 20px;
+  font-size: 14px;
+  padding: 10px 16px;
+  transition: all 0.5s;
+
 }
 
 [nz-button]:hover {
   background-color: white;
   color: #516BEB;
+  transition: all 0.25s;
+}
+
+[nz-button]:hover::after {
+  opacity: 1;
+  transition: all 0.5s;
 }
 
 nz-button-group [nz-button] {
   margin-right: 0;
-}
-    
-.link-button {
-  color: black;
 }
