@@ -62,3 +62,20 @@ img {
 .footer {
   color: #516BEB;
 }
+
+#food-card-test {
+  min-width: 300px;
+  max-width: 30%;
+  
+}
+
+.gutter-row ant-col ant-col-6 {
+  width: 100%;
+  padding: 0px;
+  margin: 50% 50% 50% 50%;
+}
+
+.ant-col-6 {
+  min-width: 100%;
+  
+}

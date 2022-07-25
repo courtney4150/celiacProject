@@ -38,6 +38,22 @@
                               [foodCert]="food.cert">
               </app-food-item>
             </div>
+            
+            
+
+          </div>
+          <div nz-row id="food-card-test-row" nzJustify="center" [nzGutter]="[16, 24]">
+            <div id="food-card-test" *ngFor="let food of foodsList">
+              <div nz-col class="gutter-row" [nzSpan]="6">
+                <app-food-item  [foodName]="food.name" 
+                                [foodManufacturer]="food.manufacturer" 
+                                [foodDescription]="food.description" 
+                                [foodLink]="food.learnmore"
+                                [foodCert]="food.cert">
+                </app-food-item>
+              </div>
+             
+            </div>
           </div>
         </div>
       </nz-content>
