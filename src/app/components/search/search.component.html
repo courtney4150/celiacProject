@@ -3,16 +3,41 @@
       <form (ngSubmit)="onSearch()">
         <div class="form-group">
           <label for="search-text"></label>
-          <nz-input-group [nzSuffix]="suffixIconSearch">
-            <input type="text" name="search" class="form-control" id="search-text" aria-describedby="search-text" 
-            [(ngModel)]="searchText" nz-input placeholder="Enter text to search" 
-            autofocus />
+          <nz-input-group [nzSuffix]="suffixIconSearch" nzCompact>
+            <input  type="text" 
+                    name="search" 
+                    class="form-control" 
+                    id="search-text" 
+                    aria-describedby="search-text" 
+                    [(ngModel)]="searchText" 
+                    nz-input 
+                    placeholder="Enter text to search" 
+                    autofocus />
           </nz-input-group>
           <ng-template #suffixIconSearch>
             <a (click)="onSearch()"><i nz-icon nzType="search"></i></a>
           </ng-template>
+          <div>
+            <p>Filter by certification: 
+              &nbsp;
+              <a (click)="onSeachCert('GFCO')">Gluten-Free Certification Organization</a> 
+              &nbsp;
+              <a (click)="onSeachCert('NSF')">NSF</a> 
+              &nbsp;
+              <a (click)="onSeachCert('CGL')">Crossed Grain</a> 
+              &nbsp; 
+              &nbsp;
+              <a id="clear" (click)="clear()">Clear Search</a>
+            </p>
+          </div>
+          
         </div>
-        <a id="clear" (click)="clear()">Clear Search</a>
+        <div *ngIf="this.searchText">
+          <h4 id="show-results">Showing search results for <b>"{{this.searchText}}"</b> 
+            <div *ngIf="this.searchCert">with <b>{{this.searchCert.toUpperCase()}}</b> certification</div>
+          </h4>
+        </div>
+        
       </form>
     </div>
   </div>

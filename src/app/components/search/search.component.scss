@@ -10,11 +10,26 @@
     text-decoration: underline;
     color: #516BEB;
     font-size: 16px;
-
+    text-align: right;
 }
 
 .form-group {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+}
+
+p {
+    text-align: left;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: underline;
+}
+
+#show-results {
+    margin-top: 60px;
+    display: none;
 }

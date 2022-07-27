@@ -18,6 +18,7 @@ interface Food {
 })
 export class TopLayoutComponent {
   public searchText = '';
+  public searchCert = '';
   public foodsList: Food[] = [];
   private _allFoodsList: Food[] = [];
 
@@ -32,10 +33,15 @@ export class TopLayoutComponent {
       })
   }
 
+  public onSearchCert(searchCert: string) {
+    this.searchCert = searchCert;
+  }
+
   public onSearch(searchText: string): void {
     this.foodsList = this._allFoodsList.filter((food) => 
-    food.name.toLowerCase().includes(searchText) ||
-    food.manufacturer.toLowerCase().includes(searchText)
+    (food.name.toLowerCase().includes(searchText) ||
+    food.manufacturer.toLowerCase().includes(searchText)) &&
+    food.cert.toLowerCase().includes(this.searchCert)
     );
   }
 }

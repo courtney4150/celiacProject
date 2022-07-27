@@ -30,5 +30,45 @@
         "description": "Rich, buttery cookies with sweet, crunchy toffee bits. Gluten-free.",
         "learnmore": "https://www.littlebrowniebakers.com/products/toffee-tastic/",
         "cert": "NSF"
+    },
+    {
+        "id": 5,
+        "name": "Perfect Peanut Butter Cookies",
+        "manufacturer": "Lucky Spoon Bakery",
+        "description": "Break into a six-pack of these perfectly-sized cookies, and you’re greeted by the aroma of freshly ground peanuts. Then bite into one of these chewy delights and it’s a party in your mouth. Full of savory flavor – and you’ll never miss the gluten.",
+        "learnmore": "https://luckyspoon.com/cinnamon-streusel/",
+        "cert": "GFCO"
+    },
+    {
+        "id": 6,
+        "name": "Lucy's Gluten-Free Lemon Goodness Cookies",
+        "manufacturer": "Westminster Bakers Co.",
+        "description": "We test for milk, egg, gluten, peanut, almond, hazelnut and walnut traces in our ingredients and never allow these items in our bakery or warehouse. No Peanuts. No Tree Nuts. No Milk. No Eggs. Non-GMO. Verified.",
+        "learnmore": "https://www.westminstercrackers.com/lemon-goodness-cookies",
+        "cert": ""
+    },
+    {
+        "id": 7,
+        "name": "Gluten Free Soft Baked Snikerdoodle Cookies",
+        "manufacturer": "liveGfree",
+        "description": "Live a gluten-free life with the comfort of knowing that each product has been sourced and made from premium quality gluten-free ingredients to provide you with a worry-free diet that tastes great.",
+        "learnmore": "https://www.instacart.com/products/19857723-livegfree-soft-baked-snickerdoodle-cookie-6-oz",
+        "cert": "GFCO"
+    },
+    {
+        "id": 8,
+        "name": "Schar Cookies Gluten Free Shortbread",
+        "manufacturer": "Schar",
+        "description": "For decades, Schar has been known for providing certified safe and delicious gluten-free foods made using high quality, Non-GMO ingredients and absolutely no preservatives.",
+        "learnmore": "https://www.vitacost.com/schar-cookies-gluten-free-shortbread-7-oz?CSRC=FGPF-810757010135",
+        "cert": "CGL"
+    },
+    {
+        "id": 9,
+        "name": "Crunchy Double Chocolate Cookies",
+        "manufacturer": "Simple Mills",
+        "description": "Chocolate Lovers, it's time to celebrate! Our Crunchy Double Chocolate Cookies are a sweet, chocolate-y dream come true.",
+        "learnmore": "https://www.simplemills.com/Shop/Product/Crunchy-Double-Chocolate-Cookies.aspx",
+        "cert": "GFCO"
     }
 ]
