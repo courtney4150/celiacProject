@@ -33,15 +33,12 @@ export class TopLayoutComponent {
       })
   }
 
-  public onSearchCert(searchCert: string) {
-    this.searchCert = searchCert;
-  }
-
-  public onSearch(searchText: string): void {
+  public onSearch(formValues: any): void {
+    console.log(formValues);
     this.foodsList = this._allFoodsList.filter((food) => 
-    (food.name.toLowerCase().includes(searchText) ||
-    food.manufacturer.toLowerCase().includes(searchText)) &&
-    food.cert.toLowerCase().includes(this.searchCert)
+    (food.name.toLowerCase().includes(formValues.search) ||
+    food.manufacturer.toLowerCase().includes(formValues.search)) &&
+    food.cert.toLowerCase().includes(formValues.certification)
     );
   }
 }

@@ -1,40 +1,33 @@
 <div class="content" role="main">
     <div class="card">
-      <form (ngSubmit)="onSearch()">
+      <form [formGroup]="form">
         <div class="form-group">
           <label for="search-text"></label>
-          <nz-input-group [nzSuffix]="suffixIconSearch" nzCompact>
+          <nz-input-group nzCompact [nzSuffix]="suffixIconSearch">
+            <nz-select class="select" formControlName="certification">
+              <nz-option [nzLabel]="'GFCO'" [nzValue]="'gfco'"></nz-option>
+              <nz-option [nzLabel]="'NSF'" [nzValue]="'nsf'"></nz-option>
+              <nz-option [nzLabel]="'CGL'" [nzValue]="'cgl'"></nz-option>
+            </nz-select>
             <input  type="text" 
                     name="search" 
                     class="form-control" 
                     id="search-text" 
                     aria-describedby="search-text" 
-                    [(ngModel)]="searchText" 
+                    formControlName="search"
                     nz-input 
                     placeholder="Enter text to search" 
                     autofocus />
           </nz-input-group>
-          <ng-template #suffixIconSearch>
-            <a (click)="onSearch()"><i nz-icon nzType="search"></i></a>
-          </ng-template>
-          <div>
-            <p>Filter by certification: 
-              &nbsp;
-              <a (click)="onSeachCert('GFCO')">Gluten-Free Certification Organization</a> 
-              &nbsp;
-              <a (click)="onSeachCert('NSF')">NSF</a> 
-              &nbsp;
-              <a (click)="onSeachCert('CGL')">Crossed Grain</a> 
-              &nbsp; 
-              &nbsp;
-              <a id="clear" (click)="clear()">Clear Search</a>
-            </p>
-          </div>
           
+          <ng-template #suffixIconSearch>
+            <i nz-icon nzType="search"></i>
+          </ng-template>
+ 
         </div>
-        <div *ngIf="this.searchText">
-          <h4 id="show-results">Showing search results for <b>"{{this.searchText}}"</b> 
-            <div *ngIf="this.searchCert">with <b>{{this.searchCert.toUpperCase()}}</b> certification</div>
+        <div *ngIf="searchText">
+          <h4 id="show-results">Showing search results for <b>"{{searchText}}"</b> 
+            <div *ngIf="form.value.certification">with <b>{{form.value.certification.toUpperCase()}}</b> certification</div>
           </h4>
         </div>
         

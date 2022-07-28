@@ -24,6 +24,9 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzPopoverModule } from 'ng-zorro-antd/popover';
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzSelectModule } from 'ng-zorro-antd/select';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 registerLocaleData(en);
@@ -54,7 +57,10 @@ registerLocaleData(en);
     NzBreadCrumbModule,
     NzInputModule,
     NzGridModule,
-    NzPopoverModule
+    NzPopoverModule,
+    NzFormModule,
+    NzSelectModule,
+    ReactiveFormsModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
