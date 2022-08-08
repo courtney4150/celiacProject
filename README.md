@@ -1,5 +1,8 @@
 # CeliacProject
 
+Hi there! I developed this project as a way to learn Angular and the NG Zorro Component Library. The topic gluten free food products was inspired by the challenge of finding gluten free foods for people with Celiac Disease. Users can search through the database of foods (right now they're all cookies haha) and filter by the various gluten free certifications. 
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.8.
 
 ## Development server
