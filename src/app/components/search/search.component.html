@@ -3,12 +3,13 @@
       <form [formGroup]="form">
         <div class="form-group">
           <label for="search-text"></label>
+          <nz-select class="select" formControlName="certification" [nzPlaceHolder]="'All Products'">
+            <nz-option [nzLabel]="'All Products'" [nzValue]="''"></nz-option>
+            <nz-option [nzLabel]="'GFCO (Gluten-Free Certification Organization)'" [nzValue]="'gfco'"></nz-option>
+            <nz-option [nzLabel]="'NSF (National Sanitation Foundation)'" [nzValue]="'nsf'"></nz-option>
+            <nz-option [nzLabel]="'CGL (Crossed Grain Licensing)'" [nzValue]="'cgl'"></nz-option>
+          </nz-select>
           <nz-input-group nzCompact [nzSuffix]="suffixIconSearch">
-            <nz-select class="select" formControlName="certification">
-              <nz-option [nzLabel]="'GFCO'" [nzValue]="'gfco'"></nz-option>
-              <nz-option [nzLabel]="'NSF'" [nzValue]="'nsf'"></nz-option>
-              <nz-option [nzLabel]="'CGL'" [nzValue]="'cgl'"></nz-option>
-            </nz-select>
             <input  type="text" 
                     name="search" 
                     class="form-control" 
